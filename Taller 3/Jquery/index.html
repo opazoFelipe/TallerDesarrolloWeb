@@ -1,0 +1,142 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+  <title>Prueba de Bootstrap</title> 
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  
+  
+  <script src="js/jquery-3.3.1.js"></script>
+  <script src="js/funciones.js"></script>
+  <script src="jquery.rut.js"></script>
+
+  <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .colorAdvertencia
+    {
+      color: red;
+    }
+    .formListo
+    {
+      background-color: green;
+    }
+    .formIncompleto
+    {
+      background-color: red;
+    }
+  </style>
+  
+  
+</head> 
+<body> 
+  <body>
+  <div class="container"> <!--div principal "container"-->
+    <form action="#" id="formulario">
+                               
+    <div class="row">       <!-- div fila 1-->
+      <!----------------------- Columna 1 --------------------->
+
+      <div class="col-md-8">
+      <div class=" form-group container" id="divNombre">
+        <label for="nombre">Nombre</label>
+            <input type="text" class="form-control" id="nombre" name="nombre">
+      </div>
+        </div>  
+
+      <!----------------------- Columna 2 --------------------->
+      
+      <div class="col-md-4" id="col2Fila1">
+      </div>
+
+    </div> <!--Final div fila 1-->
+
+    <div class="row" id="fila2">       <!-- div fila 2-->
+      <!----------------------- Columna 1 --------------------->
+
+      <div class="col-md-8">
+      <div class=" form-group container" id="divNacionalidad">
+            <label for="selectNacionalidad">Nacionalidad</label>
+              <select class="form-control" id="selectNacionalidad" name="selectNacionalidad">
+                <option value="1">Chileno</option>
+                <option value="2">Extranjero</option>
+            </select>
+      </div>
+        </div>  
+
+      <!----------------------- Columna 2 --------------------->
+      
+      <div class="col-md-4 offset-md-1">
+        
+      </div>
+
+    </div> <!--Final div fila 2-->
+
+                       <!-- div fila Nacionalidad, esta fila es reemplazada-->
+    <div class="row" id="filaReemplazo" style="border-style: solid;">
+     </div> 
+                       <!--Final div fila Nacionaldiad-->
+
+     <div class="row" id="filaTipoIngreso">      <!-- div fila 3-->
+      <!----------------------- Columna 1 --------------------->
+
+      <div class="col-md-8">
+      <div class=" form-group container" id="divTipoIngreso">
+            <label for="selectTipoIngreso">Tipo de ingreso</label>
+              <select class="form-control" id="selectTipoIngreso" name="selectTipoIngreso">
+                <option value="1">Peatonal</option>
+                <option value="2">Vehiculo</option>
+            </select>
+      </div>
+        </div>  
+
+      <!----------------------- Columna 2 --------------------->
+      
+      <div class="col-md-4 offset-md-1">
+        
+      </div>
+
+    </div> <!--Final div fila 3-->
+
+                         <!-- div fila Vehiculo, esta fila es reemplazada-->
+    <div class="row" id="filaReemplazo2">
+     </div> 
+                       <!--Final div fila Vehiculo-->
+
+    <div class="row">       <!-- div fila 7-->
+      <!----------------------- Columna 1 --------------------->
+
+      <div class="col-md-8">
+      <div class=" form-group container" id="divNumeroGuia">
+        <label for="numeroGuia">Numero de guia</label>
+            <input type="text" class="form-control" id="numeroGuia" name="numeroGuia">
+      </div>
+        </div>   
+
+      <!----------------------- Columna 2 --------------------->
+      
+      <div class="col-md-4 offset-md-1">
+        
+      </div>
+
+    </div> <!--Final div fila 7-->
+
+    <div class="row">       <!-- div fila 8-->
+      <!----------------------- Columna 1 --------------------->
+
+      <div class="col-md-8">
+      <div class=" form-group container" id="divBotonGuardar">
+          <button type="submit" id="botonGuardar" class="btn btn-success btn-block" style="padding: 20px 0px;">Guardar</button> 
+        </div>  
+
+      <!----------------------- Columna 2 --------------------->
+      
+      <div class="col-md-4 offset-md-1">
+        
+      </div>
+
+    </div> <!--Final div fila 8-->
+    
+    </form> 
+  </div> <!--Final div principal "container"-->
+</body> 
+</html> 

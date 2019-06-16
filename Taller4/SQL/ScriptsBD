@@ -1,0 +1,18 @@
+--Creacion BD
+CREATE TABLE MARCA
+(
+	idMarca int,
+	DescripcionMarca varchar(50),
+	PRIMARY KEY(idMarca)
+);
+
+CREATE TABLE MODELO
+(
+	idModelo varchar(10),
+	idMarca int,
+	DescripcionModelo varchar(50),
+	PRIMARY KEY(idModelo),
+	FOREIGN KEY(idMarca)REFERENCES MARCA(idMarca)
+);
+
+
